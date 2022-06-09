@@ -22,7 +22,7 @@ RUN	\
 	&& add-apt-repository -y ppa:ondrej/php \
 	&& add-apt-repository -y ppa:ondrej/apache2 \
 	&& apt-get update \
-    && apt-get install -y unzip curl apache2 libapache2-mod-php7.4 php4-soap php7.4-cli php7.4-readline php7.4-mbstring php7.4-zip php7.4-intl php7.4-xml php7.4-json php7.4-curl php7.4-gd php7.4-pgsql php7.4-mysql php-pear \
+    && apt-get install -y unzip curl apache2 libapache2-mod-php7.4 php7.4-soap php7.4-cli php7.4-readline php7.4-mbstring php7.4-zip php7.4-intl php7.4-xml php7.4-json php7.4-curl php7.4-gd php7.4-pgsql php7.4-mysql php-pear \
     # Apache settings
     && cp /dev/null ${APACHE_CONF_DIR}/conf-available/other-vhosts-access-log.conf \
     && rm ${APACHE_CONF_DIR}/sites-enabled/000-default.conf ${APACHE_CONF_DIR}/sites-available/000-default.conf \
